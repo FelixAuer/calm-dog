@@ -1,8 +1,11 @@
 <template>
     <div>
-        <p>{{ step.description }}</p>
-
-        <timer v-if="step.time" :time="step.time"></timer>
+        <div class="mb-4">
+            <p>{{ step.description }}</p>
+        </div>
+        <div>
+            <timer v-if="step.time" :time="step.time"></timer>
+        </div>
     </div>
 </template>
 
@@ -23,10 +26,5 @@
                 this.currentStep++
             }
         },
-        computed: {
-            exercise() {
-                return this.exercises.filter(exercise => exercise.id == this.id)[0]
-            }
-        }
     }
 </script>

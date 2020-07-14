@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}"  class="h-full">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,17 +7,18 @@
     <title>Laravel</title>
     <link rel="stylesheet" href="/css/app.css">
 </head>
-<body>
-<div id="app">
-    <div class="container mx-auto px-2">
-        <header class="py-6">
-            <h1 class="text-3xl">CalmDog</h1>
-        </header>
+<body class="bg-gray-200 h-full">
+<div id="app"  class="h-full flex flex-col">
 
-        <main>
-            <router-view></router-view>
-        </main>
-    </div>
+    <header class="py-4 bg-teal-400 font-display">
+        <div class="container mx-auto text-center">
+            <h1 class="text-2xl text-white"><a href="/">CalmDog</a></h1>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4 flex-grow font-body">
+        <router-view></router-view>
+    </main>
 </div>
 
 <script src="/js/app.js"></script>

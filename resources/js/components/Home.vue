@@ -6,10 +6,20 @@
                     Start Exercise {{ maxId*1 + 1 }}
                 </router-link>
             </div>
-            <div class="bg-white rounded-lg p-4 shadow-md" v-else>
-                <router-link :to="{name: 'exercise', params: {id: 1}}">
-                    Start first exercise
-                </router-link>
+
+            <div v-else>
+                <div class="bg-white rounded-lg p-4 shadow-md">
+                    <h3 class="text-2xl">Teach Your Dog To Relax</h3>
+                    <p>CalmDog teaches you how to train your dog to calm down.</p>
+
+                    <div class="mt-4">
+                        <router-link to="/how-it-works">
+                        <span class="bg-yellow-500 px-4 py-2 rounded-lg w-full hover:bg-yellow-600">
+                            How it works
+                        </span>
+                        </router-link>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -25,7 +35,8 @@
         </div>
 
         <div class="mb-4 text-center">
-            <button class="bg-gray-400 hover:bg-gray-600 px-2 py-1 rounded-lg" @click="resetProgress">Reset Progress</button>
+            <button class="bg-gray-400 hover:bg-gray-600 px-2 py-1 rounded-lg" @click="resetProgress">Reset Progress
+            </button>
         </div>
     </div>
 </template>

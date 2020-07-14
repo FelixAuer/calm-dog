@@ -5,7 +5,7 @@
         <button class="bg-yellow-500 hover:bg-yellow-600 px-2 py-1 rounded-lg" v-if="running || finished"
                 @click="reset">Reset
         </button>
-        <button class="bg-yellow-500 hover:bg-yellow-600 px-2 py-1 rounded-lg" v-else @click="start">Start</button>
+        <button class="bg-yellow-500 hover:bg-yellow-600 px-2 py-1 rounded-lg" v-else @click="start">Start Timer</button>
     </div>
 </template>
 

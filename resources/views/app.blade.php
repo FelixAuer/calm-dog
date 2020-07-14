@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>CalmDog | Calm Your Dog</title>
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body class="bg-gray-200 h-full">

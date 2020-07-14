@@ -7,7 +7,7 @@
                 <p class="mb-4">CalmDog uses CanineBehaviorScience.com's <a class="text-yellow-600"
                                                                             href="https://www.caninebehaviorscience.com/relaxation-protocol/">"Relaxation
                     Protocol"</a> to help you train your dog to relax.</p>
-                <p class="mb-4">The protocol consists of 15 exercises that systematically teach your dog learn to relax
+                <p class="mb-4">The protocol consists of 15 sets of exercises that systematically teach your dog learn to relax
                     while "weird"
                     things happen around them. A session works like this:</p>
                 <ul class="list-inside list-disc mb-4">
@@ -17,7 +17,7 @@
                     <li>If your dog stays in their position calmly reward them
                         with a treat and a little praise.
                     </li>
-                    <li>Repeat until the exercise is done.</li>
+                    <li>Repeat until the session is done.</li>
                 </ul>
 
                 <h4 class="text-xl mb-2">If The Dog "Breaks"</h4>

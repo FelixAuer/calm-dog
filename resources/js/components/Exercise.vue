@@ -1,7 +1,7 @@
 <template>
     <div class="bg-white rounded-lg shadow-md h-full flex flex-col">
         <div class="px-8 pb-2 pt-4 text-center flex-grow flex flex-col">
-            <span class="text-gray-600" >{{ exercise.name }}</span>
+            <span class="text-gray-600">{{ exercise.name }}</span>
             <div class="flex-grow text-2xl flex flex-col justify-center">
                 <step v-if="currentStep < (exercise.steps.length)" :step="exercise.steps[currentStep]"></step>
                 <span v-else>Finished! Come back tomorrow for your next exercise! &#x1F604; &#x1F436;</span>
@@ -61,9 +61,14 @@
                 this.currentStep++
             },
             setFinished() {
-                if (this.$cookies.get("max-exercise") < this.$route.params.id) {
-                    this.$cookies.set("max-exercise", this.$route.params.id, 99999999);
+                if (this.$cookies.get("current-exercise") < (this.$route.params.id * 1 + 1)) {
+                    this.$cookies.set("current-exercise", (this.$route.params.id * 1 + 1), 99999999);
                 }
+            }
+        },
+        mounted() {
+            if (!this.$cookies.isKey("current-exercise") || this.$cookies.get("current-exercise") < this.$route.params.id) {
+                this.$cookies.set("current-exercise", this.$route.params.id, 99999999);
             }
         },
         computed: {

@@ -6,6 +6,8 @@
 
     <title>CalmDog | Calm Your Dog</title>
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
+    @laravelPWA
+
 </head>
 <body class="bg-gray-200 h-full">
 <div id="app" class="h-full flex flex-col">

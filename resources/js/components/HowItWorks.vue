@@ -51,6 +51,16 @@
                     </router-link>
                 </div>
             </div>
+            <div class="bg-white rounded-lg p-4 shadow-md mt-4">
+                <h3 class="text-2xl mb-2">Add KK9 To Your Homescreen</h3>
+                <p class="mb-4">You can add KalmKanine to your phone's homescreen to make it work and feel like an app.</p>
+
+                <h4 class="text-xl">Android</h4>
+                <p class="mb-4">Open the menu of your browser (three dots on the top right) and select "Add to home screen".</p>
+
+                <h4 class="text-xl">iPhone</h4>
+                <p class="mb-4">Tap the "Share" button on the bottom of your screen and select "Add to home screen".</p>
+            </div>
         </div>
     </div>
 </template>

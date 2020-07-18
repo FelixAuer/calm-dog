@@ -6,7 +6,7 @@
                     <div class="flex content-center justify-between">
                         <div class="self-center">
                             <h3 class="text-2xl">Continue</h3>
-                            <span> Up next: Exercise {{ maxId }}</span>
+                            <span>Exercise {{ maxId }}</span>
                         </div>
                         <div class="rounded-full self-center bg-yellow-500 inline-block px-2 py-2 leading-tight">
                             <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-double-right"

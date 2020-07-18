@@ -4,10 +4,35 @@
             <span class="text-gray-600">{{ exercise.name }}</span>
             <div class="flex-grow text-2xl flex flex-col justify-center">
                 <step v-if="currentStep < (exercise.steps.length)" :step="exercise.steps[currentStep]"></step>
-                <span v-else>Finished! Come back tomorrow for your next exercise! &#x1F604; &#x1F436;</span>
+
+                <div v-else>
+                    <p>Finished! Come back tomorrow for your next session! &#x1F604; &#x1F436;</p>
+                    <div class="text-base mt-8">
+                        <div class="mb-2">
+                            <router-link to="/">
+                                <span
+                                    class="bg-teal-600 text-white px-4 py-2 rounded-lg w-full hover:bg-teal-700 block text-center">
+                                    Repeat exercise
+                                </span>
+                            </router-link>
+                        </div>
+
+                        <div>
+                            <router-link to="/">
+                                <span
+                                    class="bg-teal-600 text-white px-4 py-2 rounded-lg w-full hover:bg-teal-700 block text-center"
+                                    @click="moveToNext">
+                                    Go to next exercise
+                                </span>
+                            </router-link>
+                        </div>
+                    </div>
+                </div>
             </div>
+
             <span class="text-gray-600" v-if="currentStep < (exercise.steps.length)">{{ currentStep +1 }}/{{ exercise.steps.length }}</span>
         </div>
+
         <div class="bg-gray-100 rounded-lg px-2 py-2">
             <div class="flex mb-4">
                 <div class="pr-1 w-full">
@@ -24,16 +49,10 @@
                 </div>
             </div>
             <div class="w-full block">
-                <router-link to="/" v-if="currentStep == (exercise.steps.length)">
-                    <span class="bg-teal-600 text-white px-4 py-2 rounded-lg w-full hover:bg-red-700 block text-center"
-                          :disabled="currentStep == 0"
-                          @click="setFinished">Back to home</span>
-                </router-link>
-
-                <router-link to="/" class="w-full block" v-else>
-                    <span class="bg-gray-400 px-4 py-2 rounded-lg w-full hover:bg-gray-500 block text-center"
-                          :disabled="currentStep == 0"
-                          @click="previousStep">Cancel Exercise</span>
+                <router-link to="/" class="w-full block">
+                    <span class="bg-gray-400 px-4 py-2 rounded-lg w-full hover:bg-gray-500 block text-center">
+                        Cancel Exercise
+                    </span>
                 </router-link>
             </div>
         </div>
@@ -60,7 +79,7 @@
             nextStep() {
                 this.currentStep++
             },
-            setFinished() {
+            moveToNext() {
                 if (this.$cookies.get("current-exercise") < (this.$route.params.id * 1 + 1)) {
                     this.$cookies.set("current-exercise", (this.$route.params.id * 1 + 1), 99999999);
                 }

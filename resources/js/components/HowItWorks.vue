@@ -4,7 +4,7 @@
 
             <div class="bg-white rounded-lg p-4 shadow-md">
                 <h3 class="text-2xl mb-2">How It Works</h3>
-                <p class="mb-4">CalmDog uses CanineBehaviorScience.com's <a class="text-yellow-600"
+                <p class="mb-4">KalmKanine uses CanineBehaviorScience.com's <a class="text-yellow-600"
                                                                             href="https://www.caninebehaviorscience.com/relaxation-protocol/">"Relaxation
                     Protocol"</a> to help you train your dog to relax.</p>
                 <p class="mb-4">The protocol consists of 15 sets of exercises that systematically teach your dog learn to relax

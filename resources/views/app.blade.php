@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>CalmDog | Calm Your Dog</title>
+    <title>KalmKanine | Calm Your Dog</title>
     <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
     @laravelPWA
 
@@ -15,7 +15,7 @@
     <header class="py-4 bg-teal-400 font-display">
         <div class="container mx-auto text-center">
             <h1 class="text-2xl text-white">
-                <router-link to="/">CalmDog</router-link>
+                <router-link to="/">KK9</router-link>
             </h1>
         </div>
     </header>

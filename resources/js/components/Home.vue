@@ -24,7 +24,7 @@
             <div v-else>
                 <div class="bg-white rounded-lg p-4 shadow-md">
                     <h3 class="text-2xl">Teach Your Dog To Relax</h3>
-                    <p>CalmDog teaches you how to train your dog to calm down.</p>
+                    <p>KalmKanine teaches you how to train your dog to calm down.</p>
 
                     <div class="mt-4">
                         <router-link to="/how-it-works">

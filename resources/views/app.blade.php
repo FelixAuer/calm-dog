@@ -26,7 +26,7 @@
     <header class="py-4 bg-teal-400 font-display">
         <div class="container mx-auto text-center">
             <h1 class="text-2xl text-white">
-                <router-link to="/">KK9</router-link>
+                <router-link to="/">KalmKanine</router-link>
             </h1>
         </div>
     </header>

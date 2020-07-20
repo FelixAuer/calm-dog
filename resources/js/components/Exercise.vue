@@ -3,34 +3,36 @@
         <div class="px-8 pb-2 pt-4 text-center flex-grow flex flex-col">
             <span class="text-gray-600">{{ exercise.name }}</span>
             <div class="flex-grow text-2xl flex flex-col justify-center">
-                <step v-if="currentStep < (exercise.steps.length)" :step="exercise.steps[currentStep]"></step>
-
-                <div v-else>
-                    <p>Finished! Come back tomorrow for your next session! &#x1F604; &#x1F436;</p>
-                    <div class="text-base mt-8">
-                        <div class="mb-2">
-                            <router-link to="/">
+                <transition name="fade" mode="out-in">
+                    <step v-if="currentStep < (exercise.steps.length)" :step="exercise.steps[currentStep]" :key="currentStep"></step>
+                    <div v-else>
+                        <p>Finished! Come back tomorrow for your next session! &#x1F604; &#x1F436;</p>
+                        <div class="text-base mt-8">
+                            <div class="mb-2">
+                                <router-link to="/">
                                 <span
                                     class="bg-teal-600 text-white px-4 py-2 rounded-lg w-full hover:bg-teal-700 block text-center">
                                     Repeat exercise
                                 </span>
-                            </router-link>
-                        </div>
+                                </router-link>
+                            </div>
 
-                        <div>
-                            <router-link to="/">
+                            <div>
+                                <router-link to="/">
                                 <span
                                     class="bg-teal-600 text-white px-4 py-2 rounded-lg w-full hover:bg-teal-700 block text-center"
                                     @click="moveToNext">
                                     Go to next exercise
                                 </span>
-                            </router-link>
+                                </router-link>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </transition>
             </div>
-
-            <span class="text-gray-600" v-if="currentStep < (exercise.steps.length)">{{ currentStep +1 }}/{{ exercise.steps.length }}</span>
+            <transition name="fade">
+                <span class="text-gray-600" v-if="currentStep < (exercise.steps.length)">{{ currentStep +1 }}/{{ exercise.steps.length }}</span>
+            </transition>
         </div>
 
         <div class="bg-gray-100 rounded-lg px-2 py-2">

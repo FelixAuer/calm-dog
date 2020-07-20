@@ -12,7 +12,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61441996-8"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'UA-61441996-8');
@@ -32,7 +36,9 @@
     </header>
 
     <main class="container mx-auto p-4 flex-grow font-body">
-        <router-view></router-view>
+        <transition name="fade" mode="out-in">
+            <router-view></router-view>
+        </transition>
     </main>
     <div class="container mx-auto text-center text-xs text-gray-500 pb-2">
         <div>

@@ -4,9 +4,9 @@
 
             <div class="bg-white rounded-lg p-4 shadow-md">
                 <h3 class="text-2xl mb-2">How It Works</h3>
-                <p class="mb-4">KalmKanine uses CanineBehaviorScience.com's <a class="text-yellow-600"
-                                                                            href="https://www.caninebehaviorscience.com/relaxation-protocol/">"Relaxation
-                    Protocol"</a> to help you train your dog to relax.</p>
+                <p class="mb-4">KalmKanine uses Dr Karen Overall's <a class="text-yellow-600"
+                                                                            href="https://journeydogtraining.com/wp-content/uploads/2017/07/ProtocolforRelaxation.pdf">"Protocol for Relaxation"</a> to help you train your dog to relax.</p>
+                <p class="mb-4">Dr. Overall is one of the world's most accomplished animal behavior scientists.</p>
                 <p class="mb-4">The protocol consists of 15 sets of exercises that systematically teach your dog learn to relax
                     while "weird"
                     things happen around them. A session works like this:</p>
@@ -34,10 +34,10 @@
                     Don't rush the exercises. The goal is not to train your dog to stay but to relax.
                 </p>
                 <p class="mb-4">
-                    For best results we recommend you read the full explanation on <a class="text-yellow-600"
-                                                                                             href="https://www.caninebehaviorscience.com/relaxation-protocol/">caninebehaviorscience.com</a>.
+                    For best results we recommend you read the full explanation in <a class="text-yellow-600"
+                                                                                             href="Protocol for Relaxation ">Dr. Overall's text</a>.
                 </p>
-                <p class="mb-4"> They developed the protocol, this website only aims to provide a convenient interface
+                <p class="mb-4"> She developed the protocol, this website only aims to provide a convenient interface
                     for you and
                     your dog.
                 </p>
